@@ -1,0 +1,67 @@
+#+title:     Ectorepo: GNU/Linux
+#+author:    David Conner
+#+email:     noreply@te.xel.io
+
+It's difficult to determine what should be in this manifest and what should not.
+There are already [planned] manifests for KDE, Garuda, the Linux Kernel and
+other related projects/categories. This issue itself is similar to the ontological issues resolved by SPDX, OWL and RDF described below.
+
+What is in Linux that is clearly not better categorized as part of:
+
++ Linux kernel development?
++ A specific distribution?
++ A Window Manager or Desktop Environment?
++ X11 or Wayland?
++ Essential GNU software tools?
+
+What makes the most sense is to define this repo as containing the last
+category, plus anything that isn't readily contained within the others while
+also being considered a staple of Linux distributions. For now, I may include
+information about some alternatives to the Linux kernel or in the traditional
+Linux ecosystem, generally, before splitting that off.
+
+Eventually everything could move, as the GNU tools themselves have alternatives:
+whether one-to-one replacements (posix compatible) or tools whose usage/API
+overlaps with established needs for computering systems or tools that could
+invalidate those needs entirely.
+
+* New Developments
+
+** SPDX
+
+3.0 is the first ISO version of SPDX. It codifies a working ontology within
+which software packages can be completely modeled. SPDX bundles information that
+conveys:
+
++ Components of a software package
++ Tracking of software package provenance
++ Licensing of the package and its components (enabling validation)
+
++ SPDX :: Software Package Data Exchange
+  - [[https://spdx.org/rdf/ontology/spdx-2-2/][SPDX spec]] definied defined with RDF ontology modeling
+  - Interesting SPDX docs:
+    + 3 [[https://spdx.github.io/spdx-spec/v3-draft/terms-and-definitions/][Terms and Definitions]]
+    + 5 [[https://spdx.github.io/spdx-spec/v3-draft/composition-of-an-SPDX-document/][Composition of an SPDX Document]]
+    + 9 [[https://spdx.github.io/spdx-spec/v3-draft/snippet-information/][Snippet Information]]
+    + 7 [[https://spdx.github.io/spdx-spec/v3-draft/package-information/][Package information]]
+    + 11 [[https://spdx.github.io/spdx-spec/v3-draft/relationships-between-SPDX-elements/][Relationships between SPDX elements]]
+    + The appendices are also useful
+
++ RDF :: W3C's Resource Description Framework
+  - see the repo [[https://github.com/w3c/EasierRDF][w3c/easierRDF]] for clearer descriptions
++ OWL :: W3C's [[https://www.w3.org/OWL/][Web Ontology Language]]
+  - wikipedia has a more dense intro
+
+* Package Managers
+
+* Emerging Distros
+
+** Guix
+
+* Linux Alternatives
+
+** Google Fuschia
+
+** Open BSD
+
+** Haiku
